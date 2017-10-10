@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test page</title>
+    <link rel="stylesheet" type="text/css" href="./js/slick-1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/slick-1.8.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/stylesForMobile.css">
+</head>
+<body>
+
+<!-- top bar -->
+    <div class="row ">
+        <header class="col-sm topbar row middle">
+            <div class="col-sm-12">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+        </header>
+    </div>
+<div class="row">
+        <nav class="menu-tabs col-sm-12">
+            <ul>
+                <li class="active">
+                    <a href="#">홈</a>
+                </li>
+                <li>
+                    <a href="#">최신</a>
+                </li>
+                <li>
+                    <a href="#">특종</a>
+                </li>
+                <li>
+                    <a href="#">독점</a>
+                </li>
+                <li>
+                    <a href="#">이슈</a>
+                </li>
+                <li>
+                    <a href="#">해외</a>
+                </li>
+                <li>
+                    <a href="#">포토</a>
+                </li>
+                <li>
+                    <a href="#">패션</a>
+                </li>
+                <li>
+                    <a href="#">우먼</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- articles in section -->
+    <div class="co\ntent-wrapper">
+        <div class="row">
+            <div class="banner-carousel col-sm-12">
+                <div class="banner-img banner1"></div>
+                <div class="banner-img banner2"></div>
+                <div class="banner-img banner3"></div>
+            </div>
+        </div>
+            <div class="bg_panel col-sm-12">
+                <section>
+                    <header class="row">
+                        <span class="col-sm-1 section-title-line"></span>
+                        <h1 class="col-sm-11 section-title">Ranking News</h1>
+                    </header>
+                    <article class="row">
+                        <div class="col-sm-3 list-img"></div>
+                        <p class="col-sm-9">어쩌고 저쩌고가 그렇게 됐습니다어쩌구구구구구구구구구구구구구밥먹자</p>
+                    </article>
+
+
+                </section>
+            </div>
+    </div>
+                <!--Photo-->
+            <!--</section>-->
+            <!--<section>-->
+                <!--World-->
+            <!--</section>-->
+            <!--<section>-->
+                <!--Scoops-->
+            <!--</section>-->
+
+
+<!-- Javascripts -->
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick-1.8.0/slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.banner-carousel').slick({
+            autoPlay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            dots:true,
+            mobileFirst: true,
+//            responsive: [
+//                {
+//                    breakpoint: 1024,
+//                    settings: {
+//                        slidesToShow: 3,
+//                        slidesToScroll: 3,
+//                        infinite: true,
+//                        dots: true
+//                    }
+//                },
+//                {
+//                    breakpoint: 600,
+//                    settings: {
+//                        slidesToShow: 2,
+//                        slidesToScroll: 2
+//                    }
+//                },
+//                {
+//                    breakpoint: 480,
+//                    settings: {
+//                        slidesToShow: 1,
+//                        slidesToScroll: 1
+//                    }
+//                }
+//            ]
+    });
+    });
+
+</script>
+</body>
+</html>
