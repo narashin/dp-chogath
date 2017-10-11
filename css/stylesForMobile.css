@@ -12,25 +12,38 @@ body{
 }
 
 
+.padding-side{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: inherit;
+}
+
+
 
 @media only screen and (max-width:40em){
+
     .row{
         box-sizing: border-box;
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
-        -ms-flex: 0 1 auto;
-        -webkit-box-flex: 0;
-        flex: 0 1 auto;
+        /*-ms-flex: 0 1 auto;*/
+        /*-webkit-box-flex: 0;*/
+        /*flex: 0 1 auto;*/
         -ms-flex-direction: row;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         flex-direction: row;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-right: -1rem;
-        margin-left: -1rem;
+        /*-ms-flex-wrap: wrap;*/
+        /*flex-wrap: wrap;*/
+        /*margin-right: -1rem;*/
+        /*margin-left: -1rem;*/
     }
+    .column{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+
     .col-sm,
     .col-sm-1,
     .col-sm-2,
@@ -202,14 +215,53 @@ body{
 
     /* header */
 
-    header.topbar{
+    header.top-bar{
         background-color: #4398E3;
         color: #fff;
         height: 50px;
+        width: 100%;
+        justify-content: center;
+        -webkit-justify-content: center;
+
     }
+
+    .inline-flex {
+        flex: 1;
+        display: inline-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+    .logo-img{
+        width: auto;
+        max-height: 30px;
+        text-align: center;
+    }
+
+    .fa-bars{
+        margin-right: auto;
+        justify-self: flex-start;
+        -webkit-justify-content: flex-start;
+    }
+
+    .right-icons{
+        margin-left: auto;
+        justify-self: flex-end;
+        -webkit-justify-content: flex-end;
+    }
+
+    .fa-graduation-cap{
+        padding-left: 0.5em;
+    }
+
+
+
 
     /* nav menu */
 
+    .menu-tabs{
+        border-bottom: solid 1px #4398E3;
+    }
 
     .menu-tabs ul {
         display: -webkit-flex;
@@ -279,15 +331,18 @@ body{
 
 
 
-    /* Images */
+    /* Banner Images :: Carousel */
 
     .banner-img{
         background-repeat: no-repeat;
-        min-height: 15em;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    }
+
+    .banner-img{
+        min-height: 15em;
     }
 
     .banner1{
@@ -302,6 +357,8 @@ body{
         background-image: url("../assets/carousel3.jpg");
 
     }
+
+
 
     /* banner-carousel.slick */
     .slick-dots{
@@ -320,7 +377,7 @@ body{
 
     /* lists in home */
 
-    .bg_panel {
+    .bg-panel {
         background: #FFFFFF;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13);
 
