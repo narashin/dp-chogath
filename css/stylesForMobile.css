@@ -11,14 +11,11 @@ body{
     box-sizing: border-box;
 }
 
-
-.padding-side{
+.padding-side {
     padding-right: 1rem;
     padding-left: 1rem;
     background-color: inherit;
 }
-
-
 
 @media only screen and (max-width:40em){
 
@@ -27,17 +24,12 @@ body{
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
-        /*-ms-flex: 0 1 auto;*/
-        /*-webkit-box-flex: 0;*/
-        /*flex: 0 1 auto;*/
+
         -ms-flex-direction: row;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         flex-direction: row;
-        /*-ms-flex-wrap: wrap;*/
-        /*flex-wrap: wrap;*/
-        /*margin-right: -1rem;*/
-        /*margin-left: -1rem;*/
+
     }
     .column{
         -webkit-flex-direction: column;
@@ -232,19 +224,19 @@ body{
         -webkit-justify-content: center;
     }
 
-    .logo-img{
+    .top-logo-img{
         width: auto;
         max-height: 30px;
         text-align: center;
     }
 
-    .fa-bars{
+    .fa-bars, .left-aligned{
         margin-right: auto;
         justify-self: flex-start;
         -webkit-justify-content: flex-start;
     }
 
-    .right-icons{
+    .right-icons, .right-aligned{
         margin-left: auto;
         justify-self: flex-end;
         -webkit-justify-content: flex-end;
@@ -260,7 +252,7 @@ body{
     /* nav menu */
 
     .menu-tabs{
-        border-bottom: solid 1px #4398E3;
+        border-bottom: solid 1px #4189E2;
     }
 
     .menu-tabs ul {
@@ -271,8 +263,9 @@ body{
         -webkit-justify-content: space-around;
         justify-content: space-around;
         background: #ffffff;
-        height: 35px;
+        height: 33px;
     }
+
 
     .menu-tabs,
     .menu-tabs ul,
@@ -280,7 +273,6 @@ body{
     .menu-tabs ul li a {
         margin: auto;
         padding: 0;
-        border: 0;
         list-style: none;
         line-height: 1;
         position: relative;
@@ -300,8 +292,8 @@ body{
 
     .menu-tabs > ul > li > a {
         z-index: 2;
-        padding: 0px 0px 1px 0px;
-        font-size: 1em;
+        padding: 0px 0px 2px 0px;
+        font-size: 0.9em;
         text-decoration: none;
         color: #757575;
 
@@ -309,24 +301,24 @@ body{
     .menu-tabs > ul > li.active > a,
     .menu-tabs > ul > li:hover > a,
     .menu-tabs > ul > li > a:hover {
-        color: #4398E3;
+        color: #4189E2;
 
     }
     .menu-tabs > ul > li > a:after {
         position: absolute;
         left: 0;
-        bottom: -5px;
+        bottom: -6px;
         right: 0;
         z-index: -1;
         width: 100%;
-        height: 3px;
+        height: 4px;
         content: "";
 
     }
     .menu-tabs > ul > li.active > a:after,
     .menu-tabs > ul > li:hover > a:after,
     .menu-tabs > ul > li > a:hover:after {
-        background: #4398E3;
+        background: #4189E2;
     }
 
 
@@ -334,63 +326,80 @@ body{
     /* Banner Images :: Carousel */
 
     .banner-img{
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    .banner-img{
+        background: #757575;
+        background-image: linear-gradient(rgba(0,0,0,0.00) 17%, rgba(0,0,0,0.64) 56%), url("../assets/carousel3.jpg");
+        background-image: -webkit-linear-gradient(rgba(0,0,0,0.00) 17%, rgba(0,0,0,0.64) 56%),  url("../assets/carousel3.jpg");
+        background-image: -o-linear-gradient(rgba(0,0,0,0.00) 17%, rgba(0,0,0,0.64) 56%),  url("../assets/carousel3.jpg");
+        background-image:  -moz-linear-gradient(rgba(0,0,0,0.00) 17%, rgba(0,0,0,0.64) 56%),  url("../assets/carousel3.jpg");
         min-height: 15em;
-    }
-
-    .banner1{
-        background-image: url("../assets/carousel1.jpg");
-
-    }
-    .banner2{
-        background-image: url("../assets/carousel2.jpg");
-
-    }
-    .banner3{
-        background-image: url("../assets/carousel3.jpg");
-
     }
 
 
 
     /* banner-carousel.slick */
     .slick-dots{
-        color: #757575;
-    }
-    .slick-dots,
-    .slick-active{
-        bottom: 1em;
+        bottom: 0.5em;
         z-index: 999;
-
     }
-    .slick-dots:active{
+
+    .slick-dots li button:before{
+        color: #fff;
+        opacity: 0.5;
+    }
+
+    .slick-dots li.slick-active button:before{
         color: #4189E2;
     }
 
+    .slick-dotted.slick-slider{
+        margin-bottom: 0px;
+    }
 
     /* lists in home */
+
+    .delimiter-margin-top{
+        margin-top: 0.4em;
+    }
+
+   .delimiter-gray-line{
+        border-top: 1px solid #D8D8D8;
+        width: 95%;
+       height: 1px;
+       margin: auto;
+       margin-top: 0.3em;
+       margin-bottom: 0.3em;
+    }
 
     .bg-panel {
         background: #FFFFFF;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13);
+        padding-bottom: 20px;
 
     }
-
     .section-title-line{
         border-right: 3px solid #4189E2;
-        margin: 1em 0 0 1em;
-        padding: 0 1em 0 0;
+        margin: 1em 0.3em 1em 0;
+        height: 1em;
+        justify-content: center;
 
     }
     .section-title{
         font-size: 1em;
+        padding-top: 0.1em;
+    }
+
+    .more-detail{
+        justify-self: flex-end;
+        -webkit-justify-content: flex-end;
+        color: #9B9B9B;
+    }
+
+    .more-text{
+        font-size: 0.8rem;
+    }
+
+    .fa-caret-right{
+        margin-left: 0.3em;
     }
 
     .list-img{
@@ -401,6 +410,32 @@ body{
         -o-background-size: cover;
         background-size: cover;
         background-image: url("../assets/carousel1.jpg");
+    }
+
+
+    /* footer */
+
+    footer{
+        padding: 1em 0 1em 0;
+        font-size: 0.8em;
+        background: #4189E2;
+        color: #fff;
+    }
+
+    .social-media-icons{
+        font-size:1.8rem;
+        margin: 0.5rem 1rem 0 1rem;
+
+    }
+
+    .margin-top-helper{
+        margin-top: 0.5em;
+    }
+
+    .footer-logo-img{
+        text-align: center;
+        height: auto;
+        max-width:100%;
     }
 
 }

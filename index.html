@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test page</title>
     <link rel="stylesheet" type="text/css" href="./js/slick-1.8.0/slick/slick.css"/>
@@ -12,82 +12,181 @@
 <body>
 
 <!-- top bar -->
-    <header class="row top-bar middle padding-side">
-        <i class="fa fa-bars inline-flex" aria-hidden="true"></i>
-        <div class="inline-flex">
-            <img src="./assets/logo.png" alt="logo" class="logo-img" />
-        </div>
-        <div class="right-icons inline-flex">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-        </div>
-        </div>
-    </header>
-    <nav class="menu-tabs">
-        <ul>
-            <li class="active">
-                <a href="#">홈</a>
-            </li>
-            <li>
-                <a href="#">최신</a>
-            </li>
-            <li>
-                <a href="#">특종</a>
-            </li>
-            <li>
-                <a href="#">독점</a>
-            </li>
-            <li>
-                <a href="#">이슈</a>
-            </li>
-            <li>
-                <a href="#">해외</a>
-            </li>
-            <li>
-                <a href="#">포토</a>
-            </li>
-            <li>
-                <a href="#">패션</a>
-            </li>
-            <li>
-                <a href="#">우먼</a>
-            </li>
-        </ul>
-    </nav>
+<header class="row top-bar middle padding-side">
+    <i class="fa fa-bars inline-flex" aria-hidden="true"></i>
+    <div class="inline-flex">
+        <img src="./assets/logo.png" alt="logo" class="top-logo-img" />
+    </div>
+    <div class="right-icons inline-flex">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+    </div>
+</header>
+<nav class="menu-tabs">
+    <ul>
+        <li class="active">
+            <a href="#">홈</a>
+        </li>
+        <li>
+            <a href="#">최신</a>
+        </li>
+        <li>
+            <a href="#">특종</a>
+        </li>
+        <li>
+            <a href="#">독점</a>
+        </li>
+        <li>
+            <a href="#">이슈</a>
+        </li>
+        <li>
+            <a href="#">해외</a>
+        </li>
+        <li>
+            <a href="#">포토</a>
+        </li>
+        <li>
+            <a href="#">패션</a>
+        </li>
+        <li>
+            <a href="#">우먼</a>
+        </li>
+    </ul>
+</nav>
 
 
 <!-- articles in section -->
 <div class="content-wrapper">
-    <div>
+
+    <!-- banner :: carousel-->
+    <div class="delimiter-margin-top">
         <div class="banner-carousel">
-            <div class="banner-img banner1"></div>
-            <div class="banner-img banner2"></div>
-            <div class="banner-img banner3"></div>
+            <div class="banner-img"></div>
+            <div class="banner-img"></div>
+            <div class="banner-img"></div>
         </div>
     </div>
-    <div class="bg-panel col-sm-12">
-        <section>
-            <header class="row">
-                <span class="col-sm-1 section-title-line"></span>
-                <h1 class="col-sm-11 section-title">Ranking News</h1>
+
+    <!-- ranking news :: section -->
+    <div class="delimiter-margin-top bg-panel row column">
+        <section class="column">
+            <header class="row middle padding-side">
+                <div class="section-title-section inline-flex left-aligned">
+                    <span class="section-title-line"></span>
+                    <h1 class="section-title">Ranking News</h1>
+                </div>
+                <div class="more-detail inline-flex right-aligned middle">
+                    <span class="more-text">more</span>
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                </div>
             </header>
-            <article class="row">
-                <div class="col-sm-3 list-img"></div>
-                <p class="col-sm-9">어쩌고 저쩌고가 그렇게 됐습니다어쩌구구구구구구구구구구구구구밥먹자</p>
+            <article class="row padding-side">
+                <div class="col-sm-4 list-img"></div>
+                <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </article>
-
-
+            <div class="delimiter-gray-line"></div>
+            <article class="row padding-side">
+                <div class="col-sm-4 list-img"></div>
+                <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <div class="delimiter-gray-line"></div>
+            <article class="row padding-side">
+                <div class="col-sm-4 list-img"></div>
+                <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <div class="delimiter-gray-line"></div>
+            <article class="row padding-side">
+                <div class="col-sm-4 list-img"></div>
+                <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <div class="delimiter-gray-line"></div>
+            <article class="row padding-side">
+                <div class="col-sm-4 list-img"></div>
+                <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+        </section>
+    </div>
+    <div class="delimiter-margin-top bg-panel row column">
+        <section class="column">
+            <header class="row middle padding-side">
+                <div class="section-title-section inline-flex left-aligned">
+                    <span class="section-title-line"></span>
+                    <h1 class="section-title">Issue</h1>
+                </div>
+                <div class="more-detail inline-flex right-aligned middle">
+                    <span class="more-text">more</span>
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+            </header>
+            <article class="row padding-side">
+                <div class="col-sm-4 list-img"></div>
+                <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <div class="delimiter-gray-line"></div>
+            <article class="row padding-side">
+                <div class="col-sm-4 list-img"></div>
+                <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <div class="delimiter-gray-line"></div>
+            <article class="row padding-side">
+                <div class="col-sm-4 list-img"></div>
+                <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <div class="delimiter-gray-line"></div>
+            <article class="row padding-side">
+                <div class="col-sm-4 list-img"></div>
+                <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <div class="delimiter-gray-line"></div>
+            <article class="row padding-side">
+                <div class="col-sm-4 list-img"></div>
+                <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
         </section>
     </div>
 </div>
-<!--Photo-->
-<!--</section>-->
-<!--<section>-->
-<!--World-->
-<!--</section>-->
-<!--<section>-->
-<!--Scoops-->
-<!--</section>-->
+
+
+<footer class="delimiter-margin-top">
+    <div class="row margin-top-helper">
+        <div class="col-sm-6">
+            <img src="./assets/logo.png" alt="logo" class="footer-logo-img" />
+        </div>
+        <div class="col-sm-6 column">
+            <div class="center">공지사항 | 회사소개 | 사이트맵</div>
+            <div class="row social-media-icons around">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-youtube-square" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row margin-top-helper">
+        <div class="col-sm-12 center">서울시 강남구 논현동 255-22번지 | 인터넷신문등록번호 : 서울 아01558
+            <br>대표이사・발행인 : 이명구</div>
+    </div>
+    <div class="row margin-top-helper">
+        <div class="col-sm-12 center">디스패치의 모든 콘텐츠(기사)는 저작권법의 보호를 받은바,<br>
+            무단 전재, 복사, 배포 등을 금합니다. 이를 어길 시 법적 제재를 받을 수 있습니다.</div>
+    </div>
+    <div class="delimiter-gray-line margin-top-helper"></div>
+    <div class="row margin-top-helper">
+        <div class="col-sm-6 middle center">
+            <img src="./assets/logo_chn.png" class="footer-chnlogo-img" alt="footer-chn-logo">
+        </div>
+        <div class="col-sm-6">
+            Dispatch CHINA :
+            LAPENTTI Entertainment.
+            dispatchwb@sina.com
+        </div>
+    </div>
+    <div class="row"><div class="col-sm-12 center">copyright©2017 dispatch. All rights reserved.</div></div>
+    <div class="row"><div class="col-sm-12 center margin-top-helper">개인정보취급방침 | 청소년보호정책</div></div>
+
+
+</footer>
 
 
 <!-- Javascripts -->
@@ -102,31 +201,6 @@
             arrows: false,
             dots:true,
             mobileFirst: true,
-//            responsive: [
-//                {
-//                    breakpoint: 1024,
-//                    settings: {
-//                        slidesToShow: 3,
-//                        slidesToScroll: 3,
-//                        infinite: true,
-//                        dots: true
-//                    }
-//                },
-//                {
-//                    breakpoint: 600,
-//                    settings: {
-//                        slidesToShow: 2,
-//                        slidesToScroll: 2
-//                    }
-//                },
-//                {
-//                    breakpoint: 480,
-//                    settings: {
-//                        slidesToShow: 1,
-//                        slidesToScroll: 1
-//                    }
-//                }
-//            ]
         });
     });
 
