@@ -19,7 +19,7 @@ body{
     background-color: inherit;
 }
 
-@media only screen and (max-width:40em){
+/*@media only screen and (max-width:40em){*/
 
     .row{
         box-sizing: border-box;
@@ -478,4 +478,4 @@ body{
         max-width:100%;
     }
 
-}
+/*}*/
