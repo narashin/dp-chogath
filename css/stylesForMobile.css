@@ -1,8 +1,10 @@
 /* Primary style */
 
 body{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Apple Gothic","돋움",Dotum,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #EEEEEE;
     margin: 0 0 0 0;
+    color: #4A4A4A;
 }
 
 * {
@@ -17,7 +19,7 @@ body{
     background-color: inherit;
 }
 
-@media only screen and (max-width:40em){
+/*@media only screen and (max-width:40em){*/
 
     .row{
         box-sizing: border-box;
@@ -334,6 +336,13 @@ body{
         min-height: 15em;
     }
 
+    .banner-desc{
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 180px;
+    }
 
 
     /* banner-carousel.slick */
@@ -363,6 +372,15 @@ body{
 
    .delimiter-gray-line{
         border-top: 1px solid #D8D8D8;
+        width: 95%;
+       height: 1px;
+       margin: auto;
+       margin-top: 0.3em;
+       margin-bottom: 0.3em;
+    }
+
+    .delimiter-white-line{
+        border-top: 1px solid #FFF;
         width: 95%;
        height: 1px;
        margin: auto;
@@ -411,6 +429,28 @@ body{
         background-size: cover;
         background-image: url("../assets/carousel1.jpg");
     }
+    .upper-list-img{
+        background-repeat: no-repeat;
+        min-height: 7em;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-image: url("../assets/carousel1.jpg");
+    }
+
+    /* photo */
+
+    .photo-list-img{
+        background-repeat: no-repeat;
+        min-height: 7em;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-image: url("../assets/carousel1.jpg");
+    }
+
 
 
     /* footer */
@@ -424,12 +464,12 @@ body{
 
     .social-media-icons{
         font-size:1.8rem;
-        margin: 0.5rem 1rem 0 1rem;
+        margin: 0.5rem 1.5rem 0 1.5rem;
 
     }
 
     .margin-top-helper{
-        margin-top: 0.5em;
+        margin-top: 0.8em;
     }
 
     .footer-logo-img{
@@ -438,4 +478,4 @@ body{
         max-width:100%;
     }
 
-}
+/*}*/
