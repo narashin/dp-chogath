@@ -313,9 +313,9 @@ body{
 
     .menu-tabs > ul > li > a {
         z-index: 2;
-        padding: 0 0.2em 2px 0.2em;
+        padding: 0 0.2em 3px 0.2em;
         margin: 1em 0.3em 0 0.3em;
-        font-size: 1.2em;
+        font-size: 1.1em;
         text-decoration: none;
         color: #757575;
     }
