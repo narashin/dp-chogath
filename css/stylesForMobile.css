@@ -276,19 +276,25 @@ body{
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
-    /*.nav-item {*/
-        /*flex: 0 0 auto;*/
-    /*}*/
 
-
-    .menu-tabs{
+    .menu-tabs {
         border-bottom: solid 1px #4189E2;
+
     }
 
     .menu-tabs ul {
         background: #ffffff;
         height: 38px;
+        -ms-overflow-style: none;
+        overflow : -moz-scrollbars-none;
+
     }
+
+    .menu-tabs ul::-webkit-scrollbar{
+        display: none;
+    }
+
+
 
     .menu-tabs,
     .menu-tabs ul,
@@ -337,7 +343,7 @@ body{
         right: 0;
         z-index: -1;
         width: 100%;
-        height: 3px;
+        height: 2px;
         content: "";
 
     }
