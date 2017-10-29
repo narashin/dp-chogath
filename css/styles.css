@@ -17,6 +17,10 @@
         color: #4A4A4A;
     }
 
+    .flex-wrap-md{
+        flex-wrap: wrap;
+    }
+
     .padding-side {
         padding-right: 1rem;
         padding-left: 1rem;
@@ -29,8 +33,6 @@
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
-
-        flex-wrap: wrap;
 
         -ms-flex-direction: row;
         -webkit-box-orient: horizontal;
@@ -477,6 +479,20 @@
 
     }
 
+    .bg-panel-no-top{
+        background: #FFFFFF;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13);
+        padding-bottom: 20px;
+        border-top: 0;
+    }
+
+    .bg-panel-right-only{
+        background: #FFFFFF;
+        box-shadow: none;
+        border-top: 0;
+        border-right: 1px solid rgba(0,0,0,0.05);
+    }
+
     .section-title-line {
         border-right: 3px solid #4189E2;
         margin: 1em 0.3em 1em 0;
@@ -524,51 +540,6 @@
         -o-background-size: cover;
         background-size: cover;
         background-image: url("../assets/carousel1.jpg");
-    }
-
-    #wrapper {
-        top: 88px;
-        overflow: hidden;
-        z-index: -1;
-    }
-
-    #scroller {
-        position: absolute;
-        z-index: 1;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        width: 100%;
-        -webkit-transform: translateZ(0);
-        -moz-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        -o-transform: translateZ(0);
-        transform: translateZ(0);
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        -webkit-text-size-adjust: none;
-        -moz-text-size-adjust: none;
-        -ms-text-size-adjust: none;
-        -o-text-size-adjust: none;
-        text-size-adjust: none;
-    }
-
-    @-webkit-keyframes loading {
-        from {
-            -webkit-transform: rotate(0deg) translateZ(0)
-        }
-        to {
-            -webkit-transform: rotate(360deg) translateZ(0)
-        }
-    }
-    @-ms-keyframes loading {
-        from {
-            -ms-transform: rotate(0deg) translateZ(0)
-        }
-        to {
-            -ms-transform: rotate(360deg) translateZ(0)
-        }
     }
 
 
@@ -622,13 +593,41 @@
     /*--------------------------------------------------------*/
     /*-------------------------list --------------------------*/
     .list-top-padding {
-        padding-top: 20px;
+        padding-top: 0.5rem;
     }
 
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+    }
+
+    .pagination {
+    }
+
+    .pagination a {
+        color: inherit;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .pagination > a.active{
+        font-weight: bold;
+        color: #4398E3;
+    }
+
+    h1.side-news-title{
+        font-size: 1rem;
+      color: #4398E3;
+    }
+
+    .side-news-ranking{
+
+    }
+
+    h1.section-list-title{
+        font-size: 1.2rem;
+
     }
 
     /*--------------------------------------------------------*/
@@ -663,13 +662,21 @@
         font-family: -apple-system,system-ui,BlinkMacSystemFont,"Apple Gothic","돋움",Dotum,"Helvetica Neue",Helvetica,Arial,sans-serif;
         background-color: #EEEEEE;
         margin: 0 0 0 0;
-        color: #4A4A4A;
+        color: #242424;
+    }
+
+    .margin-auto-helper{
+        margin: auto;
     }
 
     .padding-side {
         padding-right: 1rem;
         padding-left: 1rem;
         background-color: inherit;
+    }
+
+    .flex-wrap{
+        flex-wrap: wrap;
     }
 
     .row{
@@ -925,16 +932,6 @@
     /* ------------------------------------------------- */
     
 
-
-    .menu-tabs-side-gradient{
-        z-index: 999;
-        background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 8%);
-        background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 8%);
-        background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 8%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
-    }
-    
-
     .scroll {
         display: flex;
         white-space: nowrap;
@@ -945,7 +942,14 @@
     }
 
     .menu-tabs {
-        border-bottom: solid 1px #4189E2;
+        z-index: 999;
+        border-bottom: solid 1px #4398E3;
+        background-image: linear-gradient(-90deg, #4398E3 0%, rgba(141,184,222,0.00) 4%, rgba(109,170,224,0.00) 96%, #4398E3 100%);
+        background-image: -webkit-linear-gradient(-90deg, #4398E3 0%, rgba(141,184,222,0.00) 4%, rgba(109,170,224,0.00) 96%, #4398E3 100%);
+        background-image: -moz-linear-gradient(-90deg, #4398E3 0%, rgba(141,184,222,0.00) 4%, rgba(109,170,224,0.00) 96%, #4398E3 100%);
+        background-image: -o-linear-gradient(-90deg, #4398E3 0%, rgba(141,184,222,0.00) 4%, rgba(109,170,224,0.00) 96%, #4398E3 100%);
+        background: #4398E3;
+
 
     }
 
@@ -1041,9 +1045,9 @@
         margin-top: 180px;
         margin-left: 2rem;
         margin-right: 2rem;
-        word-wrap: break-word;
         text-align: center;
         white-space: normal;
+        word-wrap: break-word;
         line-height: 1.2em;
         min-height: 2.4em;
         display:-webkit-box;
@@ -1105,7 +1109,7 @@
        margin-bottom: 0.3em;
     }
 
-    .bg-panel {
+    .bg-panel, .bg-panel-sm {
         background: #FFFFFF;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13);
         padding-bottom: 20px;
@@ -1158,44 +1162,28 @@
         background-image: url("../assets/carousel1.jpg");
     }
 
+    /* scoop */
 
-    #wrapper {
-        top: 88px;
+    p.scoop-title{
+
+    }
+
+    p.scoop-desc{
+        font-size: 0.8rem;
+        color: #9B9B9B;
+        white-space: normal;
+        word-wrap: break-word;
+        line-height: 1.2em;
+        min-height: 3.6em;
+        display:-webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
         overflow: hidden;
-        z-index: -1;
-    }
-
-    #scroller{
-        position: absolute;
-        z-index: 1;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
-        width: 100%;
-        -webkit-transform: translateZ(0);
-        -moz-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        -o-transform: translateZ(0);
-        transform: translateZ(0);
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        -webkit-text-size-adjust: none;
-        -moz-text-size-adjust: none;
-        -ms-text-size-adjust: none;
-        -o-text-size-adjust: none;
-        text-size-adjust: none;
     }
 
 
-    @-webkit-keyframes loading {
-        from {-webkit-transform:rotate(0deg) translateZ(0)}
-        to {-webkit-transform:rotate(360deg) translateZ(0)}
-    }
-    @-ms-keyframes loading {
-        from {-ms-transform:rotate(0deg) translateZ(0)}
-        to {-ms-transform:rotate(360deg) translateZ(0)}
-    }
 
 
     /*--------------------------------------------------------*/
@@ -1251,14 +1239,36 @@
 
     /*-------------------------list --------------------------*/
 
+    .section-list-title{
+        display: none;
+    }
     .list-top-padding{
-        padding-top: 20px;
+        padding-top: 0.5rem;
     }
 
     ul{
         list-style-type: none;
         margin: 0;
         padding: 0;
+    }
+
+    .pagination {
+        padding-bottom: 0.5rem;
+    }
+
+    .pagination a {
+        padding: 8px 16px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .pagination > a.active{
+        font-weight: bold;
+        color: #4398E3;
+    }
+
+    .side-news{
+        display: none;
     }
 
     /*--------------------------------------------------------*/
