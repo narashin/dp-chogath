@@ -13,17 +13,21 @@
 
 <!-- top bar -->
 <header class="row top-bar middle padding-side">
-    <i class="fa fa-bars inline-flex" aria-hidden="true"></i>
+    <i class="left-top-icon fa fa-bars inline-flex" aria-hidden="true"></i>
     <div class="left-top-text-link inline-flex left-aligned margin-top-helper-md">
         <span id="report">기사제보</span>
         <span id="pipe-letter">|</span>
         <span>스쿨패치</span>
     </div>
-    <div class="inline-flex middle-md middle">
+    <div class="inline-flex middle-md middle logo">
         <img src="./assets/logo.png" alt="logo" class="top-logo-img" />
     </div>
-    <div class="inline-flex right-icons">
-        <i class="fa fa-search" aria-hidden="true"></i>
+    <div class="inline-flex right-icons middle">
+        <form class="searchbox">
+            <input type="search" placeholder="" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+            <input type="submit" class="searchbox-submit" value="GO">
+            <span class="searchbox-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </form>
         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
     </div>
     <div class="inline-flex right-top-blank"></div>
@@ -31,6 +35,7 @@
 
 
 <nav class="menu-tabs">
+    <div class="grad-prev"></div>
     <ul class="scroll col-md-7">
         <li class="active">
             <a href="#">홈</a>
@@ -59,7 +64,13 @@
         <li>
             <a href="#">우먼</a>
         </li>
+        <div class="search-box-md middle-md center-md">
+            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+            <input type="search" name="search">
+            <span class="underline"></span>
+        </div>
     </ul>
+    <div class="grad-next"></div>
 </nav>
 
 
