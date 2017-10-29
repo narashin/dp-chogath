@@ -390,6 +390,7 @@
     .menu-tabs > ul > li > a:hover:after {
         background: #F2E727;
     }
+    
 
     /* ------------------------------------------------- */
     /* Banner Images :: Carousel */
@@ -941,18 +942,6 @@
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
 
-    .menu-tabs {
-        z-index: 999;
-        border-bottom: solid 1px #4398E3;
-        background-image: linear-gradient(-90deg, #4398E3 0%, rgba(141,184,222,0.00) 4%, rgba(109,170,224,0.00) 96%, #4398E3 100%);
-        background-image: -webkit-linear-gradient(-90deg, #4398E3 0%, rgba(141,184,222,0.00) 4%, rgba(109,170,224,0.00) 96%, #4398E3 100%);
-        background-image: -moz-linear-gradient(-90deg, #4398E3 0%, rgba(141,184,222,0.00) 4%, rgba(109,170,224,0.00) 96%, #4398E3 100%);
-        background-image: -o-linear-gradient(-90deg, #4398E3 0%, rgba(141,184,222,0.00) 4%, rgba(109,170,224,0.00) 96%, #4398E3 100%);
-        background: #4398E3;
-
-
-    }
-
     .menu-tabs ul {
         background: #ffffff;
         height: 38px;
@@ -1022,7 +1011,26 @@
     .menu-tabs > ul > li > a:hover:after {
         background: #4189E2;
     }
-    
+
+    .menu-tabs .grad-prev{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 38px;
+        background: -webkit-gradient(linear,left top,right top,color-stop(15%,#fff),color-stop(100%,rgba(255,255,255,0)));
+        z-index: 100;
+    }
+
+    .menu-tabs .grad-next{
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 26px;
+        height: 38px;
+        background: -webkit-gradient(linear,left top,right top,color-stop(0,rgba(255,255,255,0)),color-stop(75%,#fff));
+        z-index: 100;
+    }
     
 
     /* ------------------------------------------------- */
