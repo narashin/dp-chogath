@@ -641,7 +641,6 @@
     .list-top-padding {
         padding-top: 0.5rem;
     }
-
     ul {
         list-style-type: none;
         margin: 0;
@@ -667,13 +666,8 @@
       color: #4398E3;
     }
 
-    .side-news-ranking{
-
-    }
-
     h1.section-list-title{
         font-size: 1.2rem;
-
     }
 
     /*--------------------------------------------------------*/
@@ -700,6 +694,10 @@
 
 }
 
+
+/* =============================================================== */
+/* for mobile devices */
+
 /* =============================================================== */
 
 @media only screen and (max-width:40em){
@@ -718,6 +716,12 @@
     .padding-side {
         padding-right: 1rem;
         padding-left: 1rem;
+        background-color: inherit;
+    }
+
+    .sm-padding-side{
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
         background-color: inherit;
     }
 
@@ -1230,7 +1234,7 @@
     }
 
     .delimiter-white-line{
-        border-top: 1px solid #FFF;
+        border-top: 1px solid #D8D8D8;
         width: 95%;
        height: 1px;
        margin: auto;
@@ -1290,9 +1294,9 @@
         background-size: cover;
         background-image: url("../assets/carousel1.jpg");
     }
-
+    /*--------------------------------------------------------*/
     /* scoop */
-
+    /*--------------------------------------------------------*/
     p.scoop-title{
 
     }
@@ -1365,8 +1369,8 @@
     }
 
     /*--------------------------------------------------------*/
-
     /*-------------------------list --------------------------*/
+    /* ------------------------------------------------------ */
 
     .section-list-title{
         display: none;
@@ -1400,9 +1404,13 @@
         display: none;
     }
 
-    /*--------------------------------------------------------*/
+    .article-list{
+        font-size: 0.9em;
+    }
 
+    /*--------------------------------------------------------*/
     /* footer */
+    /*--------------------------------------------------------*/
 
     footer{
         padding: 1em 0 1em 0;
@@ -1416,7 +1424,6 @@
         margin: 0.5rem 1.5rem 0 1.5rem;
 
     }
-
     .margin-top-helper{
         margin-top: 0.8em;
     }
