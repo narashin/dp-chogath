@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5e5e78a-3417-47bd-9b67-5defda88cdfc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/list.html" afterPath="$PROJECT_DIR$/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/read.html" afterPath="$PROJECT_DIR$/read.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,11 +65,11 @@
           <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="165" column="62" lean-forward="true" selection-start-line="165" selection-start-column="62" selection-end-line="165" selection-end-column="62" />
+                <state relative-caret-position="382">
+                  <caret line="209" column="89" lean-forward="false" selection-start-line="209" selection-start-column="89" selection-end-line="209" selection-end-column="89" />
                   <folding>
-                    <element signature="e#7967#7974#1" expanded="true" />
-                    <element signature="e#8198#8205#1" expanded="true" />
+                    <element signature="e#7935#7942#1" expanded="true" />
+                    <element signature="e#8166#8173#1" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -84,8 +82,8 @@
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="720" column="0" lean-forward="true" selection-start-line="720" selection-start-column="0" selection-end-line="720" selection-end-column="0" />
+                <state relative-caret-position="495">
+                  <caret line="1500" column="41" lean-forward="false" selection-start-line="1500" selection-start-column="41" selection-end-line="1500" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -105,11 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>-sm</find>
-      <find>300</find>
-      <find>menu</find>
-      <find>padding</find>
-      <find>left-top-text-link</find>
       <find>column</find>
       <find>menu-tabs</find>
       <find>margin-top-helper</find>
@@ -135,6 +128,11 @@
       <find>color:</find>
       <find>padding-side-md</find>
       <find>padding-side</find>
+      <find>img</find>
+      <find>list-</find>
+      <find>padding</find>
+      <find>list-top</find>
+      <find>around</find>
     </findStrings>
     <replaceStrings>
       <replace>sm</replace>
@@ -167,8 +165,8 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/read.html" />
-        <option value="$PROJECT_DIR$/list.html" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/list.html" />
       </list>
     </option>
   </component>
@@ -390,12 +388,12 @@
       <workItem from="1508539637100" duration="102000" />
       <workItem from="1508739651632" duration="33671000" />
       <workItem from="1508993191429" duration="31809000" />
-      <workItem from="1509366279947" duration="5442000" />
+      <workItem from="1509366279947" duration="8987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177584000" />
+    <option name="totallyTimeSpent" value="181129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="844" extended-state="6" />
@@ -699,22 +697,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list.html">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="165" column="62" lean-forward="true" selection-start-line="165" selection-start-column="62" selection-end-line="165" selection-end-column="62" />
-          <folding>
-            <element signature="e#7967#7974#1" expanded="true" />
-            <element signature="e#8198#8205#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="14160">
+          <caret line="948" column="21" lean-forward="false" selection-start-line="948" selection-start-column="21" selection-end-line="948" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="720" column="0" lean-forward="true" selection-start-line="720" selection-start-column="0" selection-end-line="720" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="382">
+          <caret line="209" column="89" lean-forward="false" selection-start-line="209" selection-start-column="89" selection-end-line="209" selection-end-column="89" />
+          <folding>
+            <element signature="e#7935#7942#1" expanded="true" />
+            <element signature="e#8166#8173#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -639,7 +639,7 @@
     /*--------------------------------------------------------*/
     /*-------------------------list --------------------------*/
     .list-top-padding {
-        padding-top: 0.5rem;
+        padding-top: 20px;
     }
     ul {
         list-style-type: none;
@@ -720,8 +720,8 @@
     }
 
     .sm-padding-side{
-        padding-right: 0.3rem;
-        padding-left: 0.3rem;
+        padding-right: 0.1em;
+        padding-left: 0.1em;
         background-color: inherit;
     }
 
@@ -1226,7 +1226,7 @@
 
    .delimiter-gray-line{
         border-top: 1px solid #D8D8D8;
-        width: 95%;
+        width: 100%;
        height: 1px;
        margin: auto;
        margin-top: 0.3em;
@@ -1277,13 +1277,20 @@
     }
 
     .list-img{
+        background-position: 50% 50%;
         background-repeat: no-repeat;
-        min-height: 2em;
+        max-width: 100%;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         background-image: url("../assets/carousel1.jpg");
+    }
+
+    .list-img:after{
+        content: "";
+        display: block;
+        padding-bottom: 100%;
     }
     .upper-list-img{
         background-repeat: no-repeat;
@@ -1376,7 +1383,7 @@
         display: none;
     }
     .list-top-padding{
-        padding-top: 0.5rem;
+        padding-top: 15px;
     }
 
     ul{
@@ -1387,16 +1394,18 @@
 
     .pagination {
         padding-bottom: 0.5rem;
+        color: #4A4A4A;
     }
 
     .pagination a {
-        padding: 8px 16px;
+        padding: 8px 10px;
         text-decoration: none;
         color: inherit;
     }
 
     .pagination > a.active{
         font-weight: bold;
+        font-size: 1.125em;
         color: #4398E3;
     }
 
@@ -1408,12 +1417,73 @@
         font-size: 0.9em;
     }
 
+    .line-clamp{
+        white-space: normal;
+        word-wrap: break-word;
+        font-size: inherit;
+        line-height: 1.2em;
+        min-height: 2.4em;
+        position           : relative;
+        display:-webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .line-clamp:after
+    {
+        content    : '...';
+        text-align : right;
+        bottom     : 0;
+        right      : 0;
+        width      : 25%;
+        display    : block;
+        position   : absolute;
+        height     : calc(1em * 1.2);
+        background : linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 75%);
+    }
+    @supports (-webkit-line-clamp: 1)
+    {
+        .line-clamp:after
+        {
+            display : none !important;
+        }
+    }
+    .line-clamp-1
+    {
+        -webkit-line-clamp : 1;
+        height             : calc(1em * 1.2 * 1);
+    }
+    .line-clamp-2
+    {
+        -webkit-line-clamp : 2;
+        height             : calc(1em * 1.2 * 2);
+    }
+    .line-clamp-3
+    {
+        -webkit-line-clamp : 3;
+        height             : calc(1em * 1.2 * 3);
+    }
+    .line-clamp-4
+    {
+        -webkit-line-clamp : 4;
+        height             : calc(1em * 1.2 * 4);
+    }
+    .line-clamp-5
+    {
+        -webkit-line-clamp : 5;
+        height             : calc(1em * 1.2 * 5);
+    }
+
+
     /*--------------------------------------------------------*/
     /* footer */
     /*--------------------------------------------------------*/
 
     footer{
-        padding: 1em 0 1em 0;
+        padding: 1em 0 1.2em 0;
         font-size: 0.8em;
         background: #4189E2;
         color: #fff;
@@ -1428,10 +1498,14 @@
         margin-top: 0.8em;
     }
 
-    .footer-logo-img{
+    .footer-logo-img, .footer-chnlogo-img{
         text-align: center;
         height: auto;
-        max-width:100%;
+        max-width:80%;
+    }
+
+    .no-padding-left-helper-sm{
+        padding-left: 0;
     }
 
 }
