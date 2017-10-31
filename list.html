@@ -72,6 +72,8 @@
     </ul>
     <div class="grad-next"></div>
 </nav>
+
+
 <!-- articles in section -->
 <div class="content-wrapper">
     <div class="row col-md-10 margin-auto-helper flex-wrap-md">
@@ -142,31 +144,31 @@
                 </div>
             </header>
             <article class="row sm-padding-side article-list">
-                <p class="col-sm-8 col-md-8">‘뮤직뱅크’ 뉴이스트W, 1위로 2관왕…태민·JBJ 첫 무대 [종합]</p>
+                <p class="col-sm-8 col-md-8 line-clamp line-clamp-2 margin-auto-helper">‘뮤직뱅크’ 뉴이스트W, 1위로 2관왕…태민·JBJ 첫 무대 [종합]</p>
                 <div class="col-sm-4 col-md-4 list-img"></div>
             </article>
             <div class="delimiter-gray-line"></div>
             <article class="row sm-padding-side article-list">
-                <p class="col-sm-8 col-md-8">‘뮤직뱅크’ 뉴이스트W, 1위로 2관왕…태민·JBJ 첫 무대 [종합]</p>
+                <p class="col-sm-8 col-md-8 line-clamp line-clamp-2 margin-auto-helper">‘뮤직뱅크’ 뉴이스트W, 1위로 2관왕…태민·JBJ 첫 무대 [종합]</p>
                 <div class="col-sm-4 col-md-4 list-img"></div>
             </article>
             <div class="delimiter-gray-line"></div>
             <article class="row sm-padding-side article-list">
-                <p class="col-sm-8 col-md-8">‘뮤직뱅크’ 뉴이스트W, 1위로 2관왕…태민·JBJ 첫 무대 [종합]  </p>
+                <p class="col-sm-8 col-md-8 line-clamp line-clamp-2 margin-auto-helper">‘뮤직뱅크’ 뉴이스트W, 1위로 2관왕…태민·JBJ 첫 무대 [종합]  </p>
                 <div class="col-sm-4 col-md-4 list-img"></div>
             </article>
             <div class="delimiter-gray-line"></div>
             <article class="row sm-padding-side article-list">
-                <p class="col-sm-8 col-md-8">‘뮤직뱅크’ 뉴이스트W, 1위로 2관왕…태민·JBJ 첫 무대 [종합]  </p>
+                <p class="col-sm-8 col-md-8 line-clamp line-clamp-2 margin-auto-helper">‘뮤직뱅크’ 뉴이스트W, 1위로 2관왕…태민·JBJ 첫 무대 [종합]  </p>
                 <div class="col-sm-4 col-md-4 list-img"></div>
             </article>
             <div class="delimiter-gray-line"></div>
             <article class="row sm-padding-side article-list">
-                <p class="col-sm-8 col-md-8">‘뮤직뱅크’ 뉴이스트W, 1위로 2관왕…태민·JBJ 첫 무대 [종합]  </p>
+                <p class="col-sm-8 col-md-8 line-clamp line-clamp-2 margin-auto-helper">‘뮤직뱅크’ 뉴이스트W, 1위로 2관왕…태민·JBJ 첫 무대 [종합]  </p>
                 <div class="col-sm-4 col-md-4 list-img"></div>
             </article>
         </div>
-        <div class="row around col-sm-12 col-md-10 flex-wrap pagination margin-auto-helper margin-top-helper center middle">
+        <div class="row col-sm-12 col-md-10 flex-wrap pagination margin-auto-helper margin-top-helper center middle center-md middle-md">
             <a href="#">&laquo;</a>
             <a class="active" href="#">1</a>
             <a href="#">2</a>
@@ -183,13 +185,13 @@
 
 <!-- footer -->
 <footer class="delimiter-margin-top margin-top-helper-md">
-    <div class="row margin-top-helper col-md-7 margin-auto-helper">
+    <div class="row margin-top-helper col-md-10 margin-auto-helper">
         <div class="col-sm-6 col-md-6 margin-auto-helper center center-md">
             <img src="./assets/logo.png" alt="logo" class="footer-logo-img" />
         </div>
         <div class="col-sm-6 col-md-6 column no-padding-left-helper-sm">
             <div class="center center-md">공지사항 | 회사소개 | 사이트맵</div>
-            <div class="row social-media-icons around around-md">
+            <div class="row social-media-icons margin-auto-helper margin-top-helper delimiter-margin-top around around-md">
                 <i class="fa fa-facebook-square" aria-hidden="true"></i>
                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
                 <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -227,6 +229,65 @@
 <!-- Javascripts -->
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 
+
+<script>
+    $(document).ready(function(){
+        $('.banner-carousel').slick({
+            autoPlay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            dots:true,
+            mobileFirst: true,
+        });
+
+
+        var submitIcon = $('.searchbox-icon');
+        var inputBox = $('.searchbox-input');
+        var searchBox = $('.searchbox');
+        var isOpen = false;
+        submitIcon.click(function(){
+            if(isOpen == false){
+                searchBox.addClass('searchbox-open');
+                $('.logo').css('display', 'none');
+                $('.left-top-icon').addClass('left-top-icon-shrink');
+                inputBox.focus();
+                isOpen = true;
+            } else {
+                searchBox.removeClass('searchbox-open');
+                inputBox.focusout();
+                $('.logo').css({'display':'initial', 'text-align':'center'});
+                $('.left-top-icon').removeClass('left-top-icon-shrink');
+                $('.left-top-icon').css('display', 'initial');
+                isOpen = false;
+            }
+        });
+        submitIcon.mouseup(function(){
+            return false;
+        });
+        searchBox.mouseup(function(){
+            return false;
+        });
+        $(document).mouseup(function(){
+            if(isOpen == true){
+                $('.searchbox-icon').css('display','block');
+                submitIcon.click();
+            }
+        });
+        function buttonUp() {
+            var inputVal = $('.searchbox-input').val();
+            inputVal = $.trim(inputVal).length;
+            if (inputVal !== 0) {
+                $('.searchbox-icon').css('display', 'none');
+            } else {
+                $('.searchbox-input').val('');
+                $('.searchbox-icon').css('display', 'block');
+            }
+        }
+
+
+    });
+
+</script>
 
 
 </body>
