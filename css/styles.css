@@ -22,9 +22,8 @@
     }
 
     .padding-side {
-        padding-right: 1rem;
-        padding-left: 1rem;
-        background-color: inherit;
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
     }
 
 
@@ -61,8 +60,8 @@
         -ms-flex: 0 0 auto;
         -webkit-box-flex: 0;
         flex: 0 0 auto;
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
     }
 
     .col-md {
@@ -121,6 +120,8 @@
         -ms-flex-preferred-size: 66.667%;
         flex-basis: 66.667%;
         max-width: 66.667%;
+        padding-right: 0.2em;
+        padding-left: 0.8em;
     }
 
     .col-md-9 {
@@ -255,7 +256,7 @@
 
 
     .margin-left-helper-md{
-        margin-left: 1rem;
+        margin-left: 0.7rem;
     }
 
     .no-padding-side-md{
@@ -433,62 +434,86 @@
     }
 
 
-
-
-
-
-
     /* ------------------------------------------------- */
     /* Banner Images :: Carousel */
     /* ------------------------------------------------- */
-    .banner-img {
+
+    .banner-img3 {
         background: #757575;
+        background-repeat: no-repeat;
         background-image: linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel3.jpg");
         background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel3.jpg");
         background-image: -o-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel3.jpg");
         background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel3.jpg");
-        min-height: 17em;
+        background-size: cover;
+        min-height: 300px;
     }
 
-    .banner-desc {
-        color: #fff;
-        font-size: 1.5em;
-        font-weight: 600;
-        margin: auto;
-        margin-top: 180px;
-        word-wrap: break-word;
-        text-align: center;
-        white-space: normal;
-        line-height: 1.2em;
-        min-height: 2.4em;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        text-overflow: ellipsis;
-        -o-text-overflow: ellipsis;
-        overflow: hidden;
+    .banner-img2 {
+        background: #757575;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel2.jpg");
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel2.jpg");
+        background-image: -o-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel2.jpg");
+        background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel2.jpg");
+        background-size: cover;
+        min-height: 300px;
+    }
 
+    .banner-img1 {
+        background: #757575;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel1.jpg");
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel1.jpg");
+        background-image: -o-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel1.jpg");
+        background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel1.jpg");
+        background-size: cover;
+        min-height: 300px;
+    }
+
+    .banner-img1, .banner-img2, .banner-img3{
+        position: relative;
+
+    }
+
+    #banner-desc3, #banner-desc2, #banner-desc1{
+        display: none;
+        position: absolute;
+        bottom: 1.4em;
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 600;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 70%;
+    }
+
+    .slick-active #banner-desc3,
+    .slick-active #banner-desc2,
+    .slick-active #banner-desc1{
+        display: -webkit-box;
     }
 
     /* ------------------------------------------------- */
     /* banner-carousel.slick */
     /* ------------------------------------------------- */
-    .slick-dots {
-        bottom: 0.5em;
+    .slick-arrow {
         z-index: 999;
     }
 
-    .slick-dots li button:before {
-        color: #fff;
-        opacity: 0.5;
+    .slick-next{
+        right: 1rem;
     }
 
-    .slick-dots li.slick-active button:before {
-        color: #4189E2;
+    .slick-prev{
+        left: 1rem;
     }
 
-    .slick-dotted.slick-slider {
-        margin-bottom: 0px;
+    .slick-list{
+        padding: 0 8.333% 0 8.333%!important;
     }
 
     /* -----------------------------------------------------*/
@@ -502,11 +527,10 @@
 
     .delimiter-gray-line {
         border-top: 1px solid #D8D8D8;
-        width: 95%;
+        width: 100%;
         height: 1px;
-        margin: auto;
-        margin-top: 0.3em;
-        margin-bottom: 0.3em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
 
     .delimiter-white-line {
@@ -794,10 +818,11 @@
 
     }
 
-    .footer-logo-img, .footer-chnlogo-img{
+
+    .footer-logo-img{
         text-align: center;
+        width: 200px;
         height: auto;
-        max-width:80%;
     }
 }
 
@@ -814,6 +839,13 @@
         background-color: #EEEEEE;
         margin: 0 0 0 0;
         color: #242424;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+
+    body::-webkit-scrollbar {
+        display: none;
     }
 
     .margin-auto-helper{
@@ -823,18 +855,17 @@
     .padding-side {
         padding-right: 1rem;
         padding-left: 1rem;
-        background-color: inherit;
     }
 
     .sm-padding-side{
         padding-right: 0.1em;
         padding-left: 0.1em;
-        background-color: inherit;
     }
 
     .flex-wrap{
         flex-wrap: wrap;
     }
+
 
     .row{
         box-sizing: border-box;
@@ -873,8 +904,8 @@
         -ms-flex: 0 0 auto;
         -webkit-box-flex: 0;
         flex: 0 0 auto;
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
     }
 
     .col-sm {
@@ -933,6 +964,8 @@
         -ms-flex-preferred-size: 66.667%;
         flex-basis: 66.667%;
         max-width: 66.667%;
+        padding-right: 0.2em;
+        padding-left: 0.8em;
     }
 
     .col-sm-9 {
@@ -1269,34 +1302,54 @@
     /* Banner Images :: Carousel */
     /* ------------------------------------------------- */
 
-    .banner-img{
+    .banner-img3 {
         background: #757575;
-        background-image: linear-gradient(rgba(0,0,0,0.00) 17%, rgba(0,0,0,0.64) 56%), url("../assets/carousel3.jpg");
-        background-image: -webkit-linear-gradient(rgba(0,0,0,0.00) 17%, rgba(0,0,0,0.64) 56%),  url("../assets/carousel3.jpg");
-        background-image: -o-linear-gradient(rgba(0,0,0,0.00) 17%, rgba(0,0,0,0.64) 56%),  url("../assets/carousel3.jpg");
-        background-image:  -moz-linear-gradient(rgba(0,0,0,0.00) 17%, rgba(0,0,0,0.64) 56%),  url("../assets/carousel3.jpg");
-        min-height: 17em;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel3.jpg");
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel3.jpg");
+        background-image: -o-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel3.jpg");
+        background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel3.jpg");
+        background-size: cover;
+        min-height: 300px;
     }
 
-    .banner-desc{
+    .banner-img2 {
+        background: #757575;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel2.jpg");
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel2.jpg");
+        background-image: -o-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel2.jpg");
+        background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel2.jpg");
+        background-size: cover;
+        min-height: 300px;
+    }
+
+    .banner-img1 {
+        background: #757575;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel1.jpg");
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel1.jpg");
+        background-image: -o-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel1.jpg");
+        background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.00) 17%, rgba(0, 0, 0, 0.64) 56%), url("../assets/carousel1.jpg");
+        background-size: cover;
+        min-height: 300px;
+    }
+
+    .banner-img1, .banner-img2, .banner-img3{
+        position: relative;
+
+    }
+
+    #banner-desc3, #banner-desc2, #banner-desc1{
+        position: absolute;
+        bottom: 1.4em;
         color: #fff;
         font-size: 1.3em;
         font-weight: 600;
-        margin-top: 180px;
         margin-left: 2rem;
         margin-right: 2rem;
         text-align: center;
-        white-space: normal;
-        word-wrap: break-word;
-        line-height: 1.2em;
-        min-height: 2.4em;
         display:-webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        text-overflow: ellipsis;
-        -o-text-overflow: ellipsis;
-        overflow: hidden;
-
     }
 
     /* ------------------------------------------------- */
@@ -1408,6 +1461,7 @@
         background-size: cover;
         background-image: url("../assets/carousel1.jpg");
     }
+
     /*--------------------------------------------------------*/
     /* scoop */
     /*--------------------------------------------------------*/
@@ -1616,17 +1670,25 @@
 
     .social-media-icons{
         font-size:1.8rem;
-        margin: 0.5rem 1.5rem 0 1.5rem;
+    }
 
+    .social-media-icons .fa{
+        padding-right: 10px;
     }
     .margin-top-helper{
         margin-top: 0.8em;
     }
 
-    .footer-logo-img, .footer-chnlogo-img{
+
+
+    .footer-logo-img{
         text-align: center;
+        width: 200px;
         height: auto;
-        max-width:80%;
+    }
+
+    .footer-chnlogo-img{
+        text-align: center;
     }
 
     .no-padding-left-helper-sm{
